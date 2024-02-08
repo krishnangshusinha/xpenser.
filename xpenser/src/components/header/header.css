@@ -1,0 +1,65 @@
+.header-container{
+    width: 50%;
+    margin: auto;    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin: 6px 12px;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.header-logo i{
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+}
+
+.header-button{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 0px 8px;
+}
+
+.header-button i{
+    margin-right: 4px;   
+}
+
+/*  Adding responsiveness to our header */
+
+@media only screen and (max_width: 1024px){    /* Whenever the widht of the screen touches 1024px the CSS within the braces would be executed */
+    .header-container{
+        width: 90%;
+    }
+    .header-logo{
+        font-size: 28px;
+    }
+    .header-button{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max_width: 512px){    /* Whenever the widht of the screen touches 512px the CSS within the braces would be executed */
+    .header-container{
+        width: 100%;
+    }
+    .header-logo{
+        font-size: 24px;
+    }
+    .header-button{
+        font-size: 16px;
+    }
+}

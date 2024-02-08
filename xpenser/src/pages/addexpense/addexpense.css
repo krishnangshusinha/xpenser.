@@ -1,0 +1,17 @@
+.add-expense{
+    width: 50%;
+    margin: auto;
+}
+
+@media only screen and (max_width:1024px){
+    .add-expense{
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max_width:512px){
+    .add-expense{
+        width: 100%;
+    }
+}
